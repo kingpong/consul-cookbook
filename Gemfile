@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'chef-dk', '~> 0.12'
+gem 'test-kitchen', github: 'test-kitchen/test-kitchen', branch: 'master'
 gem 'poise', '~> 2.2'
 gem 'poise-service', '~> 1.0'
 gem 'poise-boiler'
@@ -12,7 +14,6 @@ group :unit, :integration do
   gem 'chef-sugar'
   gem 'chefspec'
   gem 'berkshelf', '~> 4.0'
-  gem 'test-kitchen'
   gem 'serverspec'
 end
 

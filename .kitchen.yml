@@ -7,37 +7,27 @@ provisioner:
 
 platforms:
   - name: ubuntu-14.04
-    run_list:
-      - recipe[apt::default]
+    named_run_list: apt
   - name: ubuntu-12.04
-    run_list:
-      - recipe[apt::default]
+    named_run_list: apt
   - name: debian-8.2
-    run_list:
-      - recipe[apt::default]
+    named_run_list: apt
   - name: debian-7.9
-    run_list:
-      - recipe[apt::default]
+    named_run_list: apt
   - name: centos-7.2
-    run_list:
-      - recipe[yum::default]
+    named_run_list: yum
   - name: centos-6.7
-    run_list:
-      - recipe[yum::default]
+    named_run_list: yum
   - name: centos-5.11
-    run_list:
-      - recipe[yum::default]
+    named_run_list: yum
   - name: freebsd-10.2
-    run_list:
-      - recipe[freebsd::default]
+    named_run_list: freebsd
   - name: windows-2012r2
-    run_list:
-      - recipe[windows::default]
+    named_run_list: windows
 
 suites:
   - name: default
-    run_list:
-      - recipe[consul::default]
+    named_run_list: default
     attributes:
       consul:
         config: &default-config
@@ -46,8 +36,7 @@ suites:
           datacenter: FortMeade
           encrypt: CGXC2NsXW4AvuB4h5ODYzQ==
   - name: git
-    run_list:
-      - recipe[consul::default]
+    named_run_list: default
     attributes:
       consul:
         config: *default-config
@@ -56,8 +45,7 @@ suites:
     excludes:
       - windows-2012r2
   - name: webui
-    run_list:
-      - recipe[consul::default]
+    named_run_list: default
     attributes:
       consul:
         config:
@@ -67,10 +55,7 @@ suites:
           datacenter: FortMeade
           encrypt: CGXC2NsXW4AvuB4h5ODYzQ==
   - name: acl
-    run_list:
-      - recipe[consul::default]
-      - recipe[consul::client_gem]
-      - recipe[consul_spec::acl]
+    named_run_list: acl
     attributes:
       consul:
         config:
