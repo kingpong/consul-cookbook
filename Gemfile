@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'chef-dk', '~> 0.12'
+gem 'compat_resource', '= 12.10.5'
 gem 'test-kitchen', github: 'test-kitchen/test-kitchen', branch: 'master'
 gem 'poise', '~> 2.2'
 gem 'poise-service', '~> 1.0'

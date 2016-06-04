@@ -5,8 +5,10 @@ file "/consul_definition_check.rb" do
     #!#{RbConfig.ruby}
     exit 0
   EOF
-  owner "root"
-  mode "0755"
+  unless node.platform?('windows')
+    owner 'root'
+    mode '0755'
+  end
 end
 
 consul_definition 'consul_definition_check' do

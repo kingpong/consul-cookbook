@@ -5,8 +5,10 @@ file "/consul_watch_handler.rb" do
     #!#{RbConfig.ruby}
     exit 0
   EOF
-  owner "root"
-  mode "0755"
+  unless node.platform?('windows')
+    owner 'root'
+    mode '0755'
+  end
 end
 
 consul_watch 'consul_watch_check' do
