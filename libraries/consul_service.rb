@@ -38,7 +38,7 @@ module ConsulCookbook
       attribute(:data_dir, kind_of: String, default: lazy { node['consul']['config']['data_dir'] })
       # @!attribute config_dir
       # @return [String]
-      attribute(:config_dir, kind_of: String, default: lazy { node['consul']['config']['config_dir'] })
+      attribute(:config_dir, kind_of: String, default: lazy { node['consul']['service']['config_dir'] })
       # @!attribute nssm_params
       # @return [String]
       attribute(:nssm_params, kind_of: Hash, default: lazy { node['consul']['service']['nssm_params'] })
@@ -70,13 +70,11 @@ module ConsulCookbook
 
       def action_enable
         notifying_block do
-          [new_resource.data_dir, new_resource.config_dir].each do |dirname|
-            directory dirname do
-              recursive true
-              owner new_resource.user
-              group new_resource.group
-              mode '0755'
-            end
+          directory new_resource.data_dir do
+            recursive true
+            owner new_resource.user
+            group new_resource.group
+            mode '0755'
           end
         end
         super

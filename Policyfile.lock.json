@@ -1,5 +1,5 @@
 {
-  "revision_id": "10c0a26c753882134479d11f62057c4cbaacc7a3e69e188572b8f2458ffc0ae9",
+  "revision_id": "fb769d8574eb0001182a6da46e276115655c89127d2a5e1cadf3fcae70a396b7",
   "name": "consul",
   "run_list": [
     "recipe[consul::default]"
@@ -29,19 +29,18 @@
   "cookbook_locks": {
     "consul": {
       "version": "2.1.3",
-      "identifier": "943935d69e161cd6ad7ba2fcf2f14af40456838c",
-      "dotted_decimal_identifier": "41721199949911580.60426391543149297.82411905254284",
+      "identifier": "3d35cf6a66ae378175307a820c8355d1f249f085",
+      "dotted_decimal_identifier": "17229138538966583.36439123069897859.94360201457797",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "e9bfef299982a941cfff487ce6a9253af55dbdf7",
+        "revision": "0bf0f5c0f3f8ba8b4a1cb81bea2402eb2e0db1c8",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
-          "origin/master"
+
         ]
       },
       "source_options": {
@@ -57,12 +56,11 @@
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "e9bfef299982a941cfff487ce6a9253af55dbdf7",
+        "revision": "0bf0f5c0f3f8ba8b4a1cb81bea2402eb2e0db1c8",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
-          "origin/master"
+
         ]
       },
       "source_options": {
