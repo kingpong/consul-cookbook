@@ -1,5 +1,5 @@
 {
-  "revision_id": "aeadb8c3323b2bfa983b43faadc1f62a873bc9f74277c67c7251182e2b59eb5a",
+  "revision_id": "22e83bd7c91e2027e3838f209df787986cac40c8c22de7f6dc54a9e72fb123cb",
   "name": "consul",
   "run_list": [
     "recipe[consul::default]"
@@ -19,7 +19,8 @@
     ],
     "default": [
       "recipe[consul::default]",
-      "recipe[consul_spec::consul_definition]"
+      "recipe[consul_spec::consul_definition]",
+      "recipe[consul_spec::consul_watch]"
     ],
     "acl": [
       "recipe[consul::default]",
@@ -30,18 +31,18 @@
   "cookbook_locks": {
     "consul": {
       "version": "2.1.3",
-      "identifier": "0cca0b7f0161932844b4227537264b524d8b5b34",
-      "dotted_decimal_identifier": "3599850444775827.11334539531335462.82816860379956",
+      "identifier": "4851e1ad5fc20b3ab3bbe71ada555cc5f8cf2338",
+      "dotted_decimal_identifier": "20356228041392651.16523168266771029.102005352637240",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "44e0d2ba5274187e6bd7242c07e73bf65a280f3d",
+        "revision": "ee14fc40e8e770985454052ec8ac36a985a37e43",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/config-permissions"
         ]
       },
       "source_options": {
@@ -50,18 +51,18 @@
     },
     "consul_spec": {
       "version": "0.0.0",
-      "identifier": "2033d85caf892e9d563020cddae693429dad7639",
-      "dotted_decimal_identifier": "9064203615701294.44286336052353766.161914322515513",
+      "identifier": "be604f67d278d12de0e9f54c1b46b22b54680538",
+      "dotted_decimal_identifier": "53586139735554257.12913669399386950.195899169441080",
       "source": "test/cookbooks/consul_spec",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "44e0d2ba5274187e6bd7242c07e73bf65a280f3d",
+        "revision": "ee14fc40e8e770985454052ec8ac36a985a37e43",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/config-permissions"
         ]
       },
       "source_options": {
