@@ -85,3 +85,11 @@ end script
     end
   end
 end
+
+describe file("#{confd_dir}/consul_definition_check.json") do
+  it { should be_file }
+  it { should be_owned_by     'root' }
+  it { should be_grouped_into 'consul' }
+
+  it { should be_mode 640 }
+end
