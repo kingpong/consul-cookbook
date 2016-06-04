@@ -1,5 +1,5 @@
 {
-  "revision_id": "75676fc23de987c8ca22f2de2f5104499c7188fe4913129bdf2036918edd94d6",
+  "revision_id": "87a40d563965111da6f56aa8050cb9fe854932eab75e6f0763d006c87171c4a9",
   "name": "consul",
   "run_list": [
     "recipe[consul::default]"
@@ -27,14 +27,14 @@
   "cookbook_locks": {
     "consul": {
       "version": "2.1.3",
-      "identifier": "28ea41d1dcbdecc0ff2ccc2d71c7fc8fc28b2cee",
-      "dotted_decimal_identifier": "11516567483104748.54323763397620167.277694374423790",
+      "identifier": "00ee3b07be058f893309a39f81c3fa1ffaaea769",
+      "dotted_decimal_identifier": "261937300374927.38618188302221763.275015256680297",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "3275cd28664e0d6a2b7a80d1bab7012e99c742bf",
+        "revision": "e3884f02dbae966997c2e1f2f12f20e49dc01bca",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -47,14 +47,14 @@
     },
     "consul_spec": {
       "version": "0.0.0",
-      "identifier": "0a24ef6296a52563d996f2695f4a7ae92b44b747",
-      "dotted_decimal_identifier": "2855360336930085.28105265029668682.135141871892295",
+      "identifier": "d81348d1923621a098c0f929b16b6024490e3d38",
+      "dotted_decimal_identifier": "60819798444095009.45203950855106923.105708960759096",
       "source": "test/cookbooks/consul_spec",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "3275cd28664e0d6a2b7a80d1bab7012e99c742bf",
+        "revision": "e3884f02dbae966997c2e1f2f12f20e49dc01bca",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [

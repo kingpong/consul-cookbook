@@ -74,7 +74,7 @@ module ConsulCookbook
             recursive true
             owner new_resource.user
             group new_resource.group
-            mode '0755'
+            mode '0750'
           end
         end
         super
