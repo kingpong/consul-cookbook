@@ -30,6 +30,8 @@ suites:
     named_run_list: default
     attributes:
       consul:
+        config_owner: root
+        config_group: consul
         config: &default-config
           bootstrap: true
           server: true
